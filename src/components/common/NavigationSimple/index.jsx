@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.scss";
 import {withRouter} from "react-router-dom";
 import {Input, Menu} from "semantic-ui-react";
 import { clearSession, isLoggedIn } from "../../../services/localStorage";
+import "./style.scss";
 
-class Navigation extends React.Component {
+class NavigationSimple extends React.Component {
 
     constructor(props) {
         super(props);
@@ -44,7 +44,7 @@ class Navigation extends React.Component {
                         className="Navigation-site-title"
                         onClick={this.onTitleClick}
                     >
-                        SSR App
+                        Template
                     </div>
                 </div>
                 <Menu secondary className="Navigation-menu">
@@ -88,4 +88,4 @@ class Navigation extends React.Component {
     }
 }
 
-export default withRouter(Navigation);
+export default withRouter(NavigationSimple);

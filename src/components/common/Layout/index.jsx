@@ -1,11 +1,11 @@
 import React from "react";
-import Navigation from "../Navigation";
+import NavigationSimple from "../NavigationSimple";
 import "./style.scss";
 
 const Layout = (props) => (
         <div>
             <div>
-                <Navigation/>
+                <NavigationSimple/>
             </div>
 
             <div className="Layout-body">
